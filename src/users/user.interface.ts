@@ -1,13 +1,13 @@
 export interface User {
     username: string;
-    password: string;
     email: string;
-}
-
-export interface UnitUser extends User {
+    password: string;
+  }
+  
+  export interface UnitUser extends User {
     id: string;
-}
-
-export interface User {
-    [key: string] : UnitUser
-}
+  }
+  
+  export interface Users {
+    [key: string]: UnitUser;
+  }
